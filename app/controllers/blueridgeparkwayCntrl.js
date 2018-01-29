@@ -5,5 +5,6 @@ angular.module("routing").controller("blueridgeparkwayCntrl",function($scope,rou
     routeFactory.getBlueridge()
     .then((routeData)=>{
         $scope.listRoutes = routeData.routes;
+        
     }); 
 });
