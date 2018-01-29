@@ -7,7 +7,7 @@ angular.module("routing").factory("routeFactory",function($q,$http){
                 .get("../data/blueridge.json")
                 .then((routes)=>{
                     resolve(routes);
-                    console.log("fb data",routes);
+                    console.log(" data",routes);
                 })
                 .catch((err)=>{
                     reject(err);
@@ -15,6 +15,6 @@ angular.module("routing").factory("routeFactory",function($q,$http){
         });
     };
     return { getBlueridge };
-})
+});
 
 
