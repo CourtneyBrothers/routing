@@ -14,7 +14,20 @@ angular.module("routing").factory("routeFactory",function($q,$http){
                 });
         });
     };
-    return { getBlueridge };
+    let getRoute66 = ()=> {
+        return $q((resolve,reject)=>{
+            $http
+                .get("../data/route66.json")
+                .then((routes)=>{
+                    resolve(routes);
+                    console.log(" data",routes);
+                })
+                .catch((err)=>{
+                    reject(err);
+                });
+        });
+    };  
+    return { getBlueridge, getRoute66 };
 });
 
 

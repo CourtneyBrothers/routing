@@ -10,7 +10,7 @@ angular.module("routing", ["ngRoute"])
         })
         .when("/route66",{
             templateUrl:"partials/route66.html",
-            controller:"blueridgeparkwayCntrl"
+            controller:"route66Cntrl"
         })
         .otherwise("/");
     });
