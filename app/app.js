@@ -4,6 +4,8 @@ angular.module("routing", ["ngRoute"])
 
 .config($routeProvider => {
     $routeProvider
+
+
         .when("/blueridge",{
             templateUrl:"partials/blueridge.html",
             controller:"blueridgeparkwayCntrl"
@@ -13,4 +15,5 @@ angular.module("routing", ["ngRoute"])
             controller:"route66Cntrl"
         })
         .otherwise("/");
+        
     });
